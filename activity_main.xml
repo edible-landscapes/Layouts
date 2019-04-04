@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ ################## Intro ##################
+
+ LinearLayout (below) is a VIEW GROUP.
+ Other VIEW GROUPS include RelativeLayout, GridView, ConstraintLayout etc.
+ This is because it contains other VIEWS like TextView, Button, ImageView etc.
+
+ Things like android:layout_width, android:layout height, android:background
+ are called VIEW PROPERTIES. Each property is assigned a VALUE like
+ android:orientation="vertical"
+
+android:layout_width and android:layout height are properties you HAVE to
+implement for most views.
+
+>> Note: Click the PREVIEW button to the right to see your layout
+
+########## More about LinearLayout ##########
+
+In this view group, all views are arranged either horizontally or vertically
+(default orientation is horizontal)
+>> Try: change the orientation to horizontal
+
+In this example I have set the orientation to vertical
+(android:orientation="vertical")
+
+It is common to set the width and height of a view group to match_parent.
+Values include match_parent, wrap_content, #dp (specific size like 88dp)
+
+match_parent means you want to size to be the length of the screen.
+wrap_content - fits the size of the content
+>> Try: change the width, height, both to wrap_content
+
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Hello World!"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Android development is cool!\nYou can also add new lines"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:text="CheckBox"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="Button"
+        android:textSize="18sp" />
+
+</LinearLayout>
