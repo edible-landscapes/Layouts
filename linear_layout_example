@@ -2,6 +2,7 @@
 
 <!--
  ################## Intro ##################
+ COPY INTO YOUR LAYOUT FILE TO SEE PREVIEW 
 
  LinearLayout (below) is a VIEW GROUP.
  Other VIEW GROUPS include RelativeLayout, GridView, ConstraintLayout etc.
@@ -30,7 +31,7 @@ Values include match_parent, wrap_content, #dp (specific size like 88dp)
 
 match_parent means you want to size to be the length of the screen.
 wrap_content - fits the size of the content
->> Try: change the width, height, both to wrap_content
+>> Try: change the width, height, and both to wrap_content
 
  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
