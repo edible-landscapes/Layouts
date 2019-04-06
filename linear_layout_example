@@ -8,9 +8,12 @@
  Other VIEW GROUPS include RelativeLayout, GridView, ConstraintLayout etc.
  This is because it contains other VIEWS like TextView, Button, ImageView etc.
 
+ A view group can be child view of another view group. For example, a RelativeLayout
+ can have multiple LinearLayouts.
+
  Things like android:layout_width, android:layout height, android:background
  are called VIEW PROPERTIES. Each property is assigned a VALUE like
- android:orientation="vertical"
+ android:orientation="vertical" has the property of VERTICAL
 
 android:layout_width and android:layout height are properties you HAVE to
 implement for most views.
