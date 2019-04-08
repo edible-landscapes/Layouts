@@ -39,6 +39,8 @@
 
     ADDED   android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+
+    Produces the same result with fewer lines.
     -->
 
     <ImageView
