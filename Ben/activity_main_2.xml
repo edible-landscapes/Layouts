@@ -5,7 +5,8 @@
 
  RelativeLayouts do not have orientation.
  You are positioning views relative to others.
- A LinearLayout has orientation
+ A LinearLayout has orientation which can be set
+ to vertical or horizontal
 
  ADDED  android:padding="16dp
 
