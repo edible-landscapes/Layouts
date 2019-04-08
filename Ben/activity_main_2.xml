@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ REMOVED android:orientation="vertical"
+
+ RelativeLayouts do not have orientation.
+ You are positioning views relative to others.
+ A LinearLayout has orientation
+
+ ADDED  android:padding="16dp
+
+ Adds spacing to the edges (looks nicer)
+ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Edible Landscapes"
+        android:textColor="#ffa90a"
+        android:textSize="48sp" />
+
+    <!--
+    REMOVED android:paddingLeft="169dp"
+            android:paddingTop="600dp"
+            android:paddingRight="168dp"
+            android:paddingBottom="55dp"
+
+    Relative allows you to position view relative
+    to the parent view or to the other views
+
+    ADDED   android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+    -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+</RelativeLayout>
